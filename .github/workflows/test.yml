@@ -19,4 +19,4 @@ jobs:
           package-manager-cache: false
       - run: npm test
       - name: Prepare requests without calling a model
-        run: npm run benchmark:prepare -- VALIDATION_ONLY
+        run: npm run benchmark:prepare -- VALIDATION_ONLY --as-of 2026-10-09
