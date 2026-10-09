@@ -6,13 +6,17 @@ import {fileURLToPath} from "node:url";
 import {runTests} from "./penny-tests.mjs";
 import {runSourceTests} from "./source-tests.mjs";
 import {runEvaluationTests} from "./evaluation-tests.mjs";
+import {runTeamTests} from "./team-tests.mjs";
+import {prepareRoleContext} from "./team-workflow.mjs";
 import {prepareProfessionalPackets} from "./evaluation.mjs";
 const json=async path=>JSON.parse(await readFile(new URL(path,import.meta.url),"utf8"));
 const registry=await json("./sources/registry.json");
 const dataset=await json("./evaluation/cases-v1.json");
+const team=await json("./team/roles.json");
+const teamExample=await json("./team/example-work-item.json");
 const allTests=()=>{
-  const suites=[runTests(),runSourceTests(registry),runEvaluationTests(dataset,registry)];
-  return {release:"penny-engineering-0.2.0",qualification:"unqualified",
+  const suites=[runTests(),runSourceTests(registry),runEvaluationTests(dataset,registry),runTeamTests(team,teamExample)];
+  return {release:"penny-engineering-0.3.0",qualification:"unqualified",
     total:suites.reduce((s,r)=>s+r.total,0),passed:suites.reduce((s,r)=>s+r.passed,0),suites};
 };
 const report=allTests();
@@ -30,7 +34,8 @@ await mkdir(dir,{recursive:true});
 await writeFile(new URL("tests.json",dir),JSON.stringify(report,null,2));
 const files=["penny-core.mjs","penny-tests.mjs","penny-benchmark.mjs",
   "source-registry.mjs","source-tests.mjs","sources/registry.json",
-  "evaluation.mjs","evaluation-tests.mjs","evaluation/cases-v1.json","run.mjs"];
+  "evaluation.mjs","evaluation-tests.mjs","evaluation/cases-v1.json","run.mjs",
+  "team-workflow.mjs","team-tests.mjs","team/roles.json","team/example-work-item.json"];
 const hashes={};
 for(const file of files) hashes[file]=createHash("sha256")
   .update(await readFile(new URL(file,import.meta.url))).digest("hex");
@@ -47,6 +52,12 @@ if(i>=0) {
   });
   await writeFile(new URL("requests.json",dir),JSON.stringify(prepared,null,2));
   console.log(JSON.stringify({preparedRequests:prepared.requests,modelCalls:prepared.modelCalls}));
+}
+const teamIndex=process.argv.indexOf("--team");
+if(teamIndex>=0){
+  const context=prepareRoleContext(team,teamExample,process.argv[teamIndex+1]);
+  await writeFile(new URL("team-context.json",dir),JSON.stringify(context,null,2));
+  console.log(JSON.stringify({preparedRole:context.role.id,status:context.status,modelCalls:0}));
 }
 console.log(JSON.stringify(report,null,2));
 if(report.passed!==report.total||!report.freshProcess.passed)process.exitCode=1;

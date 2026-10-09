@@ -1,6 +1,6 @@
 {
   "name": "penny-core",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "node run.mjs",
-    "benchmark:prepare": "node run.mjs --prepare"
+    "benchmark:prepare": "node run.mjs --prepare",
+    "team:prepare": "node run.mjs --team"
   },
   "description": "Synthetic household pension fee calculation prototype; not qualified for live advice"
 }
