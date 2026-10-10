@@ -7,8 +7,8 @@
     "node": ">=22"
   },
   "scripts": {
-    "test": "node run.mjs && node --test poc/tests.mjs",
-    "test:poc": "node --test poc/tests.mjs",
+    "test": "node run.mjs && node --test poc/tests.mjs poc/meeting-tests.mjs",
+    "test:poc": "node --test poc/tests.mjs poc/meeting-tests.mjs",
     "poc": "node poc/server.mjs",
     "benchmark:prepare": "node run.mjs --prepare",
     "team:prepare": "node run.mjs --team"

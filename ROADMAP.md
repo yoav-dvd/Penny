@@ -1,4 +1,14 @@
-# Current execution decision — 10 October 2026
+# Current product decision — Hebrew meeting with Penny
+
+The founder's later direction replaces the dashboard entry point with a Hebrew, right-to-left meeting with Penny (פני). The user starts by typing or dictating. A conversation introduces relevant document requests, tables, visuals, next steps and summaries; a collapsible side inventory preserves the outputs. The trial label and limits must be visible. This authorizes the customer-facing Penny experience without restoring the retired development-agent team.
+
+Current delivery: interface first; connect the conversational model afterward, as explicitly selected by the founder. The first actual user trial is intended to use real documents. Local receipt of PDF/XLSX/XML is implemented separately from extraction: a receipt is not an analysis. All repository fixtures and software tests remain synthetic. No real document content is sent to a model in this increment.
+
+The new gates are: (1) founder review of the Hebrew meeting interface, (2) connect and evaluate one conversation model and voice input on the target browser, (3) validate extraction and reconciliation for the actual private document formats, (4) a supervised trial producing an evidence-backed current view, useful next steps, bounded recommendations and a saved return visit. A guided UI demo does not satisfy gates 2–4. Calendar download is available; proactive monitoring and external contact remain unimplemented.
+
+The fee-comparison increment remains in the backlog after the conversation and intake foundations. No production launch or professional qualification is claimed.
+
+# Earlier execution decision — 10 October 2026
 
 The founder has directed a move to a working desktop POC with one development executor. Penny, Tanya and Shelly are no longer required agents or approval stages. Their reviewed evidence, product requirements and engineering decisions remain useful inputs, with their original limits intact. Historical material below is preserved and superseded where it conflicts with this decision.
 

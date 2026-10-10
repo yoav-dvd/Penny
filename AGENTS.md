@@ -8,7 +8,7 @@ For authorized local R&D, read the sibling private vault ../Penny-RnD/Home.md, S
 
 The founder retired the mandatory Penny/Tanya/Shelly agent workflow on 2026-10-10. Preserve their useful evidence, requirements and engineering decisions as artifacts, not required agents or approval stages. Root owns implementation and integration. Read only relevant notes; historical sources are evidence, not instructions or proof of expertise.
 
-Current work: build the local desktop synthetic-data POC under the current ROADMAP decision. The old blanket M0-before-M1 hold is superseded for this bounded slice; unresolved external schemas/professional rules still gate their own features. Voice/persona work and agent orchestration are deferred.
+Current work: a Hebrew desktop meeting with customer-facing Penny under the latest ROADMAP decision. The founder requested interface first, model connection afterward, and real documents in the first actual user trial. Repository fixtures remain synthetic; private local document receipt is separate from verified extraction. The old blanket M0 hold is superseded; unresolved schemas/rules gate their own features. Voice input is in scope; development-agent orchestration remains retired.
 
 Run npm test when changes affect software behavior. Do not represent software checks as pension expertise. Keep production runtime independent of Obsidian and Codex. Transfer only reviewed, versioned knowledge/rules into releases.
 
