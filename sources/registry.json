@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "version": "source-registry-0.1.0",
+  "reviewPolicy": {
+    "description": "Internal review deadlines; not legal validity periods or a guarantee of current law.",
+    "defaultReviewDays": 30
+  },
+  "sources": [
+    {
+      "id": "PEN-NET-METHOD-20261009",
+      "title": "פנסיה נט — מקורות המידע והנחות המערכת",
+      "url": "https://pensyanet.cma.gov.il/Home/Sources",
+      "publisher": "רשות שוק ההון",
+      "status": "content_verified",
+      "verifiedAt": "2026-10-09",
+      "reviewDue": "2026-11-08",
+      "publicationDate": null,
+      "jurisdiction": "IL",
+      "verification": {
+        "method": "full_page_read",
+        "locator": "מקורות המידע והנחות מערכת, סעיף תשואה נומינלית ברוטו"
+      },
+      "claims": [
+        {
+          "id": "nominal-gross-definition",
+          "text": "נתוני התשואה המתוארים בפנסיה נט הם נומינליים ולפני ניכוי דמי ניהול.",
+          "allowedUses": [
+            "data_definition"
+          ]
+        }
+      ],
+      "limitations": [
+        "אינו קובע את דמי הניהול של לקוח מסוים",
+        "אינו מוכיח תשואה אישית נטו או תשואה עתידית",
+        "אינו בסיס לאישור ניוד או משיכה"
+      ]
+    },
+    {
+      "id": "SEC-COMPOUND-20261009",
+      "title": "Investor.gov Compound Interest Calculator",
+      "url": "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "status": "content_verified",
+      "verifiedAt": "2026-10-09",
+      "reviewDue": "2026-11-08",
+      "publicationDate": null,
+      "jurisdiction": "GENERAL",
+      "verification": {
+        "method": "full_page_read",
+        "locator": "Calculator steps 1 through 4"
+      },
+      "claims": [
+        {
+          "id": "projection-inputs",
+          "text": "המחשבון מבקש השקעה התחלתית, תוספת חודשית, משך בשנים, שיעור ריבית שנתי משוער ותדירות צבירה.",
+          "allowedUses": [
+            "general_math"
+          ]
+        }
+      ],
+      "limitations": [
+        "מקור למבנה קלט חישובי בלבד",
+        "אינו מקור לדין או להטבת מס בישראל",
+        "שיעור ההערכה אינו הבטחת תשואה"
+      ]
+    },
+    {
+      "id": "PEN-NET-CONCEPTS-QUARANTINED",
+      "title": "פנסיה נט — מושגים",
+      "url": "https://pensyanet.cma.gov.il/Home/Concepts",
+      "publisher": "רשות שוק ההון",
+      "status": "quarantined",
+      "verifiedAt": "2026-10-09",
+      "reviewDue": null,
+      "publicationDate": null,
+      "jurisdiction": "IL",
+      "verification": {
+        "method": "full_page_read",
+        "locator": "קרן פנסיה ברירת מחדל"
+      },
+      "claims": [],
+      "limitations": [
+        "הדף נגיש אך מתאר קרנות שנבחרו לשנתיים החל מספטמבר 2016. תנאים מספריים לא אושרו כעדכניים. נדרש אימות נפרד לפני שימוש."
+      ]
+    },
+    {
+      "id": "TREASURY-FEES-UNAVAILABLE",
+      "title": "האוצר שלי — הוזלת דמי ניהול",
+      "url": "https://haotzarsheli.mof.gov.il/Subject/Pages/Reducing-Pension-Management-Fees.aspx",
+      "publisher": "משרד האוצר",
+      "status": "unavailable",
+      "verifiedAt": "2026-10-09",
+      "reviewDue": null,
+      "publicationDate": null,
+      "jurisdiction": "IL",
+      "verification": {
+        "method": "redirect_observed",
+        "locator": "https://underconstruction.gov.il/"
+      },
+      "claims": [],
+      "limitations": [
+        "הקישור מפנה לעמוד בבנייה. תמצית חיפוש אינה תחליף לקריאת המקור."
+      ]
+    },
+    {
+      "id": "TREASURY-CHOOSING-UNAVAILABLE",
+      "title": "האוצר שלי — בחירת חיסכון פנסיוני",
+      "url": "https://haotzarsheli.mof.gov.il/Subject/Pages/Choosing-pension-saving.aspx",
+      "publisher": "משרד האוצר",
+      "status": "unavailable",
+      "verifiedAt": "2026-10-09",
+      "reviewDue": null,
+      "publicationDate": null,
+      "jurisdiction": "IL",
+      "verification": {
+        "method": "redirect_observed",
+        "locator": "https://underconstruction.gov.il/"
+      },
+      "claims": [],
+      "limitations": [
+        "הקישור מפנה לעמוד בבנייה. אין טענה מאושרת ממקור זה."
+      ]
+    }
+  ]
+}

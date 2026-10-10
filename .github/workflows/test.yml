@@ -1,0 +1,26 @@
+name: Core checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - run: npm ci --ignore-scripts
+      - run: npm test
+      - name: Prepare requests without calling a model
+        run: npm run benchmark:prepare -- VALIDATION_ONLY --as-of 2026-10-09
+
+      - name: Prepare Tanya context without calling a model
+        run: npm run team:prepare -- tanya

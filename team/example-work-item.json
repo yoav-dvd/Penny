@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "SYN-HANDOFF-001",
+  "revision": 1,
+  "dataClassification": "synthetic",
+  "ownerRole": "tanya",
+  "goal": "לבדוק העברת תוצר בין תפקידים לפני חיבור מודל או מידע אישי.",
+  "deliverable": "דוגמה מלאכותית למעקב אחר בדיקות נפרדות; זו אינה המלצה או החלטת מוצר אמיתית.",
+  "criteria": [
+    {
+      "id": "professional",
+      "ownerRole": "penny",
+      "method": "source_review",
+      "description": "משמעות הכלל והחוסרים מתועדים בנפרד מתוצאת החישוב."
+    },
+    {
+      "id": "technical",
+      "ownerRole": "tanya",
+      "method": "engineering_test",
+      "description": "התוצר נבדק מול תנאי קבלה ומקרי קצה."
+    },
+    {
+      "id": "product",
+      "ownerRole": "shelly",
+      "method": "product_review",
+      "description": "התוצר מתאים לצורך המתואר; אין כאן טענה שנבדק עם משתמשת."
+    },
+    {
+      "id": "delivery",
+      "ownerRole": "root",
+      "method": "integration_review",
+      "description": "הגרסה הנבדקת והראיות מזוהות והחסמים גלויים."
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "illustration",
+      "path": "synthetic-only/illustration.txt",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "evidence": [],
+  "reviews": [],
+  "blockers": [],
+  "notes": "הנתיב והגיבוב הם נתוני דוגמה בלבד, לא קובץ שנבדק. לא ניתנו אישורים אמיתיים."
+}

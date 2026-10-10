@@ -1,0 +1,8 @@
+reports/
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+.obsidian/
+.penny-poc/
