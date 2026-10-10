@@ -7,9 +7,15 @@
     "node": ">=22"
   },
   "scripts": {
-    "test": "node run.mjs",
+    "test": "node run.mjs && node --test poc/tests.mjs",
+    "test:poc": "node --test poc/tests.mjs",
+    "poc": "node poc/server.mjs",
     "benchmark:prepare": "node run.mjs --prepare",
     "team:prepare": "node run.mjs --team"
   },
-  "description": "Synthetic household pension fee calculation prototype; not qualified for live advice"
+  "description": "Synthetic household pension fee calculation prototype; not qualified for live advice",
+  "dependencies": {
+    "fast-xml-parser": "5.11.2",
+    "yauzl": "3.4.0"
+  }
 }

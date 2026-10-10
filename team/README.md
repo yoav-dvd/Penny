@@ -1,3 +1,7 @@
+# Historical role reference
+
+As of 2026-10-10, these roles are not active agents or required development gates. The founder chose one executor and a working desktop POC. Preserve useful artifacts with their original evidence limits; see [the active POC](../poc/README.md) and [current roadmap decision](../ROADMAP.md).
+
 # צוות Penny — גרסה 0.1
 
 חלוקת אחריות לפיילוט: שלי מנהלת המוצר והמחקר, טניה מובילה טכנולוגיה ומתמטיקה, פני אחראית לתחום המקצועי, והסוכן הראשי מנהל את הפרויקט לצד המייסד. אלה תפקידים מוגדרים; אין כאן טענה למומחיות שהוכחה או לשירות סוכנים פעיל.

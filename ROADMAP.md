@@ -1,3 +1,16 @@
+# Current execution decision — 10 October 2026
+
+The founder has directed a move to a working desktop POC with one development executor. Penny, Tanya and Shelly are no longer required agents or approval stages. Their reviewed evidence, product requirements and engineering decisions remain useful inputs, with their original limits intact. Historical material below is preserved and superseded where it conflicts with this decision.
+
+Build now: a local synthetic-data desktop flow for two individually owned portfolios, Excel intake, source review, explicit missing/conflicting information, audited corrections, evidence-request tracking and saved return visits. External XML semantic research no longer blocks this bounded POC. This does not declare the previous broad M0 complete, turn research notes into verified business rules, or authorize real-data deployment or financial recommendations. No agent orchestration or paid model service is required. The next gate is a working, tested POC, followed by product feedback and a bounded professional-rule increment.
+
+## Active delivery sequence
+
+1. **Working evidence POC — implemented:** synthetic Excel intake, household/individual views, source cells, explicit conflicts, audited corrections, manual evidence requests and local persistence. See [run instructions](poc/README.md). Automated software checks and a browser walkthrough passed; founder usability acceptance is still pending.
+2. **Decision POC — next:** connect one bounded, sourced fee comparison to the reviewed account data. Show individual and household effects, conditions, missing evidence and what would change the result. Accept only when exact arithmetic, blocked cases and a plain-language explanation pass the same scenarios. This is a scenario comparison before any suitability recommendation.
+3. **Private pilot readiness:** validated real-format adapters, identity/consent, safe local data handling and an independently checked professional-rule scope. The unresolved XML and payroll work gates these specific features.
+4. **Deployment:** only after the private pilot demonstrates a useful decision and return visit, with operational/security controls and the relevant professional requirements resolved.
+
 # Penny — מפת הדרכים והתחייבות הפיילוט
 עודכן: 10.10.2026. בעל האחריות הכוללת: מנהל הפרויקט.
 מסמך זה הוא מקור העבודה המרכזי ליעד, להיקף, לסדר הביצוע ולסטטוס. מסמכי מחקר ותפקידים הם חומר תומך; שינוי בהם אינו משנה אוטומטית את התכנית.
